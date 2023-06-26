@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>nav</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat semibold', sans-serif;
+    }
+	  
+	 .background-image {
+      position: fixed;
+      bottom: -10%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40%;
+      height: 40%;
+	  
+      z-index: -1;
+      background-image: url('D:\saitu meu/spray.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+	  
+     .left-aligned {
+      width: 50%; /* Occupies 6 columns out of 12 */
+	  padding-top: 7%;
+      padding-left: 30px;
+      box-sizing: border-box;
+    }
+	  
+	  .image-container {
+      width: 35%; /* Occupies the last 5 columns out of 12 */
+	  margin-top: 7%;
+	  margin-right: 30px;
+      float: right;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 30px;
+	  padding-top: 10px;
+	  padding-right: 30px;
+      padding-bottom: 10px;
+    }
+
+    .navbar-logo {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    .navbar-logo img {
+      width: 100%;
+      height: auto;
+    }
+
+    .navbar-menu {
+      flex: 0 0 50%;
+      max-width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .navbar-menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar-menu li {
+      display: inline;
+    }
+
+    .navbar-menu li a {
+      text-decoration: none;
+      color: #000;
+      padding: 10px;
+    }
+
+    /* Media query for responsiveness */
+    @media screen and (max-width: 600px) {
+      .navbar {
+        flex-wrap: wrap;
+      }
+
+      .navbar-logo, .navbar-menu {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+
+      .navbar-logo img {
+        margin-bottom: 10px;
+      }
+
+      .navbar-menu {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <a href="home.html">
+        <img src="D:\saitu meu/logosvg.svg" alt="Logo">
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <ul>
+        <li><a href="contact.html">contact</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="work.html">work</a></li>
+      </ul>
+    </div>
+  </nav>
+
+	 <div class="image-container">
+    <img src="D:\saitu meu/pozaabout.png" alt="Image">
+  </div>
+ 
+	  <div class="left-aligned">
+    <p>Hi!<br><br>
+My name is Rareș Constantin and I am the founder of Studio Sowk, which is a multidisciplinary visual design studio. 
+I am currently studying Product Design at UAUIM.<br><br>
+I have started my journey into the graphic design field as soon as I got my first laptop and I’ve been working and improving my skills ever since. <br><br>
+I have experience as a freelancer and also as an employee in some well known Romanian agencies.<br><br>
+Want to chat? Don’t hesitate, contact me!</p>
+  </div>
+	
+	<div class="background-image"></div>
+
+  <!-- Include Montserrat font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</body>
+</html>

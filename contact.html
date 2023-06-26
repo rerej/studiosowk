@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>nav</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat semibold', sans-serif;
+    }
+	  
+	 .text-container {
+      margin-top: 20px; /* Adjust the margin as needed for spacing */
+    }
+
+    .text-container p {
+		margin-left: 30px;
+      margin-bottom: 10px; /* Adjust the margin as needed for spacing */
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .text-container .bold-text {
+      font-weight: 700; /* Montserrat SemiBold */
+    }
+
+    .text-container .regular-text {
+      font-weight: 400; /* Montserrat Regular */
+    }
+
+    .text-container a {
+      color: black;
+      text-decoration: none;
+    }
+	  
+    .gif-container {
+      position: fixed;
+      bottom: -10%;
+      right: -10%;
+      z-index: 9999; /* Adjust the z-index value as needed */
+    }
+
+    .gif-container img {
+      width: 600px; /* Adjust the width of the GIF as needed */
+      height: auto;
+    }
+	  
+	  .background-container {
+      position: fixed;
+      bottom: -45%;
+      left: 0;
+      width: 75%; /* Occupies 7 columns out of 12 */
+      height: 100vh;
+      background-image: url('D:\saitu meu/paintdrop.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 30px;
+	  padding-top: 10px;
+	  padding-right: 30px;
+      padding-bottom: 10px;
+    }
+
+    .navbar-logo {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    .navbar-logo img {
+      width: 100%;
+      height: auto;
+    }
+
+    .navbar-menu {
+      flex: 0 0 50%;
+      max-width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .navbar-menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar-menu li {
+      display: inline;
+    }
+
+    .navbar-menu li a {
+      text-decoration: none;
+      color: #000;
+      padding: 10px;
+    }
+
+    /* Media query for responsiveness */
+    @media screen and (max-width: 600px) {
+      .navbar {
+        flex-wrap: wrap;
+      }
+
+      .navbar-logo, .navbar-menu {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+
+      .navbar-logo img {
+        margin-bottom: 10px;
+      }
+
+      .navbar-menu {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <a href="home.html">
+        <img src="D:\saitu meu/logosvg.svg" alt="Logo">
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <ul>
+        <li><a href="contact.html">contact</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="work.html">work</a></li>
+      </ul>
+    </div>
+  </nav>
+
+	<div class="background-container"></div>
+	
+	  <div class="text-container">
+    <p><span class="bold-text">Mail:</span> <span class="regular-text">studio.sowk@gmail.com</span></p>
+    <p><span class="bold-text">Instagram:</span> <span class="regular-text"><a href="https://www.instagram.com/studio.sowk/" target="_blank">studio.sowk</a></span></p>
+    <p><span class="bold-text">Telephone:</span> <span class="regular-text">0730.491.299</span></p>
+  </div>
+	
+  <div class="gif-container">
+    <img src="D:\saitu meu/gifcerc.gif" alt="Animated GIF">
+  </div>
+ 
+
+  <!-- Include Montserrat font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</body>
+</html>
